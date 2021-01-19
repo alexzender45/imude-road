@@ -1,0 +1,430 @@
+
+
+
+
+<!DOCTYPE html><html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Sign up</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="canonical" href="">
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="twitter:card" content="">
+<meta property="twitter:url" content="">
+<meta property="twitter:title" content="">
+<meta property="twitter:description" content="">
+<meta property="twitter:image" content="">
+<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+<link rel="manifest" href="assets/img/favicon/site.webmanifest">
+<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<link type="text/css" href="vendor/%40fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link type="text/css" href="vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+<link type="text/css" href="vendor/notyf/notyf.min.css" rel="stylesheet">
+<link type="text/css" href="vendor/fullcalendar/main.min.css" rel="stylesheet">
+<link type="text/css" href="vendor/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+<link type="text/css" href="vendor/choices.js/public/assets/styles/choices.min.css" rel="stylesheet">
+<link type="text/css" href="vendor/leaflet/dist/leaflet.css" rel="stylesheet">
+<link type="text/css" href="css/volt.css" rel="stylesheet">
+
+<style type="text/css">
+@media screen {
+.align-button{margin-left:900px}
+}
+@media only screen and (max-width: 800px) {.align-button{margin-left:10px}
+}
+@media only screen and (max-width: 640px) {
+.align-button{margin-left:10px}
+
+}
+</style>
+</head><body>
+
+<main>
+  <section class="d-flex align-items-center my-5 mt-lg-6 mb-lg-5" >
+      <div class="container">
+      <p class="text-center">
+          
+          <a class="btn btn-primary text-white mr-2 dropdown-toggle" href="acct-pen-details.html"
+                 >
+                  <span class="fas fa-user"></span> My Account Details</a>
+
+
+             
+        </p>
+
+          <p class="text-center">
+
+         
+
+
+             <a href="sign-in.html" class="text-gray-700"><i class="fas fa-angle-left mr-2"></i> Logout</a>
+        </p>
+        Registration Successful. Account activation pending
+
+      
+
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4" style=" height:100px">
+            
+         <div class="align-button">
+
+
+         <div class="col-lg-4">
+            <button class="btn btn-secondary text-dark mr-2 dropdown-toggle" data-toggle="modal"
+                  data-target="#add_data_Modal"   id="add" name="add">
+                  <span class="fas fa-plus mr-2"></span>Add Follower</button>
+            
+            
+            <!--Modal Start-->
+                  <div class="modal fade" id="add_data_Modal" tabindex="-1" role="dialog"
+                  aria-labelledby="add_data_Modal" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body p-0">
+                        <div class="card p-4"><button type="button" class="btn-close ml-auto" data-dismiss="modal"
+                            aria-label="Close"></button>
+                          <div class="card-header border-0 text-center pb-0">
+                            <h2 class="mb-0 h5">Add Follower</h2>
+                          </div>
+                          <div class="card-body">
+
+
+                            <form method="post" id="create_user_form">
+                              <div class="form-group mb-4"><label for="firstname">First Name</label>
+                                <div class="input-group"><span class="input-group-text" id="basic-addon3"><span
+                                      class="fas fa-user-check"></span></span> 
+                                      <input type="text" class="form-control" style="border-left:1px solid; padding-left:6px"
+                                    placeholder="First Name" id="fname" name="fname" required /></div>
+                                    <span>(Required)</span>
+                              </div>
+                              <div class="form-group mb-4"><label for="email">Middle Name</label>
+                                <div class="input-group"><span class="input-group-text" id="basic-addon3"><span
+                                      class="fas fa-user-check"></span></span> 
+                                      <input type="text" class="form-control" style="border-left:1px solid; padding-left:6px"
+                                    placeholder="Middle Name" id="mname" name="mname" /></div>
+                                    <span>(Optional)</span>
+                              </div>
+                              
+                              <div class="form-group">
+                                <div class="form-group mb-4"><label for="surname">Surname</label>
+                                  <div class="input-group"><span class="input-group-text" id="basic-addon4"><span
+                                        class="fas fa-user-check"></span></span>
+                                         <input type="text" style="border-left:1px solid; padding-left:6px"
+                                      placeholder="Surname" class="form-control" id="surname" name="surname" required /></div>
+                                      <span>(Required)</span>
+                                </div>
+
+                              <div class="form-group mb-4"><label for="gender">Gender</label>
+                                    <div class="input-group">
+                                          <span class="input-group-text" id="basic-addon3">
+                                               <span class="fas fa-user-check"></span>
+                                            </span>
+                                     <select class="form-select mb-0" id="gender" name="gender" aria-label="Gender select example" required>
+                                          <option value="">Gender</option>
+                                          <option value="F">Female</option>
+                                          <option value="M">Male</option>
+                                      </select>           
+                                   </div>
+                                   <span>(Required)</span>
+                              </div>
+                               
+                             </div>
+                              <div class="form-group mb-4"><label for="Phone">Phone Number</label>
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon3">
+            <span class="fas fa-phone"></span>
+           </span>
+             <input type="number" class="form-select mb-0" placeholder="e.g 0808 000 0000" id="secondary_phone" name="secondary_phone" />
+            </div>
+            <span>(Optional)</span> <span></span>
+        </div>
+                              
+                              
+                                            
+                              
+
+                               
+                              <input type="submit" id ="insert" class="btn btn-block btn-primary" value="Insert" name="insert"/>
+                            </form>
+                          
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Modal End-->
+
+
+
+              </div>
+
+
+         </div>
+
+      
+    </div>
+
+    
+    <div class="card card-body border-light shadow-sm table-wrapper table-responsive">
+   
+      <table class="table table-hover table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Middle Name</th>
+            <th>Surname</th>
+            <th>Username</th>
+            <th>Gender</th>
+            <th>Phone</th>
+            <th>Status</th>
+            <th>Edit</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+                <tbody>
+                  <tr>
+            <td>
+              <a href="#" class="font-weight-bold">1</a>
+            </td>
+            <td><span class="font-weight-normal">Ben</span></td>
+            <td><span class="font-weight-normal">Jude</span></td>
+            <td><span class="font-weight-normal">Joseph</span></td>
+            <td><span class="font-weight-normal">Ben2</span></td>
+            <td><span class="font-weight-bold">Male</span></td>
+            <td><span class="font-weight-bold">08012345678</span></td>
+            <td><span class="font-weight-bold text-warning">Pending</span></td>
+            <td><input type="button" name="edit" value="Edit" id="2" class="btn btn-primary btn-xs"  data-toggle="modal"
+                data-target="#edit_data_Modal" /></td>
+                                         
+
+            <td>
+                <button  class="btn btn-danger btn-xs"><span class="fas fa-trash-alt mr-2 delete" data-id='4' style='cursor:pointer;'></span>Remove</button>
+            </td>
+          </tr>
+                  <tr>
+            <td>
+              <a href="#" class="font-weight-bold">2</a>
+            </td>
+            <td><span class="font-weight-normal">Mary</span></td>
+            <td><span class="font-weight-normal"></span></td>
+            <td><span class="font-weight-normal">Luke</span></td>
+            <td><span class="font-weight-normal">Mary3</span></td>
+            <td><span class="font-weight-bold">Female</span></td>
+            <td><span class="font-weight-bold">08012345678</span></td>
+            <td><span class="font-weight-bold text-warning">Pending</span></td>
+            <td><input type="button" name="edit" value="Edit" id="3" class="btn btn-primary btn-xs"  data-toggle="modal"
+                data-target="#edit_data_Modal"/></td>
+                                         
+
+            <td>
+                <button  class="btn btn-danger btn-xs"><span class="fas fa-trash-alt mr-2 delete" data-id='4' style='cursor:pointer;'></span>Remove</button>
+            </td>
+          </tr>
+                  <tr>
+            <td>
+              <a href="#" class="font-weight-bold">3</a>
+            </td>
+            <td><span class="font-weight-normal">Jonathan</span></td>
+            <td><span class="font-weight-normal"></span></td>
+            <td><span class="font-weight-normal">Luke</span></td>
+            <td><span class="font-weight-normal">Jonathan4</span></td>
+            <td><span class="font-weight-bold">Male</span></td>
+            <td><span class="font-weight-bold">08012345678</span></td>
+            <td><span class="font-weight-bold text-warning">Pending</span></td>
+            <td><input type="button" name="edit" value="Edit" id="4" class="btn btn-primary btn-xs"  data-toggle="modal"
+                data-target="#edit_data_Modal" /></td>
+                                         
+
+            <td>
+             
+                <button  class="btn btn-danger btn-xs"><span class="fas fa-trash-alt mr-2 delete" data-id='4' style='cursor:pointer;'></span>Remove</button>
+                
+            
+            </td>
+          </tr>
+                 
+              
+         
+        </tbody>
+      </table>
+     
+      <div class="card-footer px-3 border-0 d-flex align-items-center justify-content-between">
+       
+      </div>
+    </div>
+    
+
+
+
+
+                </div>
+              </div>
+            </section>
+          </main>
+
+
+ <!--Edit Modal Start-->
+ <div class="modal fade" id="edit_data_Modal" tabindex="-1" role="dialog"
+ aria-labelledby="add_data_Modal" aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered" role="document">
+   <div class="modal-content">
+     <div class="modal-body p-0">
+       <div class="card p-4"><button type="button" class="btn-close ml-auto" data-dismiss="modal"
+           aria-label="Close"></button>
+         <div class="card-header border-0 text-center pb-0">
+           <h2 class="mb-0 h5">Add Follower</h2>
+         </div>
+         <div class="card-body">
+
+
+           <form method="post" id="create_user_form">
+             <div class="form-group mb-4"><label for="firstname">First Name</label>
+               <div class="input-group"><span class="input-group-text" id="basic-addon3"><span
+                     class="fas fa-user-check"></span></span> 
+                     <input type="text" class="form-control" style="border-left:1px solid; padding-left:6px"
+                   placeholder="First Name" id="fname" name="fname" required value="Ben" /></div>
+                   <span>(Required)</span>
+             </div>
+             <div class="form-group mb-4"><label for="email">Middle Name</label>
+               <div class="input-group"><span class="input-group-text" id="basic-addon3"><span
+                     class="fas fa-user-check"></span></span> 
+                     <input type="text" class="form-control" style="border-left:1px solid; padding-left:6px"
+                   placeholder="Middle Name" id="mname" name="mname" value="Jude"/></div>
+                   <span>(Optional)</span>
+             </div>
+             
+             <div class="form-group">
+               <div class="form-group mb-4"><label for="surname">Surname</label>
+                 <div class="input-group"><span class="input-group-text" id="basic-addon4"><span
+                       class="fas fa-user-check"></span></span>
+                        <input type="text" style="border-left:1px solid; padding-left:6px"
+                     placeholder="Surname" class="form-control" id="surname" name="surname" required  value="Joseph"/></div>
+                     <span>(Required)</span>
+               </div>
+
+             <div class="form-group mb-4"><label for="gender">Gender</label>
+                   <div class="input-group">
+                         <span class="input-group-text" id="basic-addon3">
+                              <span class="fas fa-user-check"></span>
+                           </span>
+                    <select class="form-select mb-0" id="gender" name="gender" aria-label="Gender select example" required>
+                         <option value="M">Male</option>
+                         <option value="F">Female</option>
+                         <option value="M">Male</option>
+                     </select>           
+                  </div>
+                  <span>(Required)</span>
+             </div>
+              
+            </div>
+             <div class="form-group mb-4"><label for="Phone">Phone Number</label>
+<div class="input-group">
+<span class="input-group-text" id="basic-addon3">
+<span class="fas fa-phone"></span>
+</span>
+<input type="number" class="form-select mb-0" placeholder="e.g 0808 000 0000" id="secondary_phone" name="secondary_phone"  value="08012345678"/>
+</div>
+<span>(Optional)</span> <span></span>
+</div>
+             
+             
+                           
+             
+
+              
+             <input type="submit" id ="insert" class="btn btn-block btn-primary" value="Insert" name="insert"/>
+           </form>
+         
+           
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- Edit Modal End-->
+
+
+     
+     
+      <script src="vendor/popper.js/dist/umd/popper.min.js"></script>
+      <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="vendor/onscreen/dist/on-screen.umd.min.js"></script>
+      <script src="vendor/nouislider/distribute/nouislider.min.js"></script>
+      <script src="vendor/jarallax/dist/jarallax.min.js"></script>
+      <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+      <script src="vendor/countup.js/dist/countUp.umd.js"></script>
+      <script src="vendor/chartist/dist/chartist.min.js"></script>
+      <script src="vendor/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+      <script src="vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
+      <script src="vendor/simple-datatables/dist/umd/simple-datatables.js"></script>
+      <script src="vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
+      <script src="cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+      <script src="vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
+      <script src="vendor/fullcalendar/main.min.js"></script>
+      <script src="vendor/dropzone/dist/min/dropzone.min.js"></script>
+      <script src="vendor/choices.js/public/assets/scripts/choices.min.js"></script>
+      <script src="vendor/notyf/notyf.min.js"></script>
+      <script src="vendor/leaflet/dist/leaflet.js"></script>
+      <script src="vendor/svgmap/dist/svgMap.min.js"></script>
+      <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+      <script async defer="defer" src="buttons.github.io/buttons.js"></script>
+      <script src="assets/js/volt.js"></script></body>
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+</html>
